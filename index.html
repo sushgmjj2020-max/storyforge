@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>StoryForge 집필실</title>
+<meta name="description" content="원고와 세계관을 GitHub 저장소에 버전별로 보관하는 소설 집필 도구">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%2333479B'/%3E%3Cpath d='M9 8h9a5 5 0 0 1 0 10h-9zM9 18h10a5 5 0 0 1 0 10H9z' fill='none' stroke='%23fff' stroke-width='2.4'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans+KR:wght@400;500;600&family=Nanum+Myeongjo:wght@400;700;800&display=swap">
+<link rel="stylesheet" href="css/app.css">
+</head>
+<body>
+<div class="app">
+  <header class="top" id="top"></header>
+  <nav class="side" id="side"></nav>
+  <main class="main" id="main"><div class="loading">작품을 불러오는 중…</div></main>
+  <aside class="ai" id="ai"></aside>
+  <footer class="status" id="status"></footer>
+  <div class="scrim" id="scrim" data-a="drawer" data-v=""></div>
+</div>
+<input type="file" id="importFile" accept="application/json,.json" hidden>
+
+<script src="js/format.js"></script>
+<script src="js/github.js"></script>
+<script src="js/ai.js"></script>
+<script src="js/sample.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>

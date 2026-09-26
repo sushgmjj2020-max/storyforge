@@ -1,0 +1,11 @@
+{
+  "name": "storyforge",
+  "version": "1.0.0",
+  "private": true,
+  "description": "원고와 세계관을 GitHub 저장소에 버전별로 보관하는 소설 집필 웹앱",
+  "scripts": {
+    "test": "node tests/run.js && node tests/ai.test.js",
+    "start": "python3 -m http.server 8080"
+  },
+  "engines": { "node": ">=18" }
+}
